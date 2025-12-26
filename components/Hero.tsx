@@ -21,13 +21,14 @@ const Hero: React.FC = () => {
           Especialista em devolver a sua liberdade de sorrir através de uma odontologia real, segura e acolhedora.
         </p>
         
-        <div className="w-full relative rounded-[2.5rem] overflow-hidden shadow-2xl mb-12 border-8 border-white group">
+        {/* Container da imagem ajustado: max-w-sm e h-auto para não esticar */}
+        <div className="w-full max-w-[320px] md:max-w-md mx-auto relative rounded-[2rem] overflow-hidden shadow-2xl mb-12 border-4 border-white group bg-zinc-50">
           <img 
             src="https://i.imgur.com/2Vb1GmZ.png" 
             alt="Dra. Andressa Valim" 
-            className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-110"
+            className="w-full h-auto block transform transition-transform duration-1000 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
         </div>
 
         <div className="w-full space-y-6">
